@@ -6,7 +6,7 @@ author_profile: true
 
 # Welcome
 
-I'm **Shane Britton**, a graduate student in Computer Science (MCIT) at the University of Pennsylvania, with a background in Mechanical Engineering and a passion for:
+Hi, I'm **Shane Britton**, a graduate student in Computer Science (MCIT) at the University of Pennsylvania, with a background in Mechanical Engineering and a passion for:
 
 - 🤖 Robotics and Embedded Systems  
 - 💡 AI & Software Development  
