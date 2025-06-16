@@ -4,9 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shane Britton Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0d0f10;
+      color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 0.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .flex-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .flex-images figure img {
+      width: 100%;
+      max-width: 350px;
+      aspect-ratio: 1.2;
+      object-fit: cover;
+      display: block;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    .rotated-gif {
+      transform: rotate(90deg);
+      max-width: 300px;
+    }
+
+    .rotated-180 {
+      transform: rotate(180deg);
+      max-width: 350px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #4da6ff;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Shane Britton</h1>
     <nav>
@@ -15,48 +142,99 @@
       <a href="#robotics">Robotics Projects</a>
       <a href="#hardware">Hardware Projects</a>
       <a href="#software">Software Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m Shane Britton, a multidisciplinary engineer and programmer focused on software, hardware, and mechanical design.</p>
+    <p>I’m Shane Britton, a multidisciplinary engineer and programmer focused on software, hardware, robotics, and mechanical design.</p>
   </section>
 
   <section id="mechanical">
     <h2>Mechanical Projects</h2>
     <ul>
-      <li>3D Printed Robotic Arm</li>
-      <li>Mechatronic Gripper for Autonomous Sorting</li>
+      <li><strong>Cam-Follower Mechanism</strong><br>
+        Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.
+      </li>
     </ul>
+
+    <div class="flex-images">
+      <figure>
+        <img src="images/labeled_assembly.gif" alt="CAD Model">
+        <figcaption>CAD Model</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up">
+        <figcaption>Cam-Roller Close Up</figcaption>
+      </figure>
+      <figure>
+        <img src="images/cam_machine.gif" alt="Full Assembly Test">
+        <figcaption>Full Assembly Test</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section id="robotics">
     <h2>Robotics Projects</h2>
     <ul>
-      <li>MiniPupper ROS2 Line Following Robot</li>
-      <li>Autonomous Ball-Chasing Rover (OpenCV + PID)</li>
+      <li><strong>MiniPupper ROS2 Line Following Robot</strong><br>
+        Built an autonomous quadruped using ROS 2 and Python. Integrated PID control for real-time line tracking and used a custom ROS service to trigger dance routines. Solved multicast blocking with a Husarnet VPN tunnel for direct DDS node communication.
+      </li>
     </ul>
+
+    <div class="centered">
+      <video controls>
+        <source src="images/minipupper_final.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div>Minipupper tracking and dancing demo</div>
+    </div>
   </section>
 
   <section id="hardware">
     <h2>Hardware Projects</h2>
     <ul>
-      <li>ESP32 IoT Sensor Network</li>
-      <li>Custom PCB Motor Driver (KiCad)</li>
+      <li><strong>UFO PCB Board</strong><br>
+        Designed a UFO-shaped custom PCB in KiCad, integrating 43 individually addressable NeoPixels. Hand-soldered SMD and through-hole components, achieving both aesthetic design and electrical integrity. Created dynamic lighting animations for demo.
+      </li>
     </ul>
+
+    <div class="flex-images" style="margin-top:1rem;">
+      <figure>
+        <img src="images/ufo_pcb_front.jpeg" alt="UFO PCB Front" class="rotated-180">
+        <figcaption>UFO PCB Front</figcaption>
+      </figure>
+      <figure>
+        <img src="images/ufo_pcb_back.jpeg" alt="UFO PCB Back" class="rotated-180">
+        <figcaption>UFO PCB Back</figcaption>
+      </figure>
+    </div>
+
+    <div class="centered" style="margin-top: 2rem;">
+      <img src="images/ufo_pcb_demo.gif" alt="UFO PCB Demo" class="rotated-gif">
+      <div>UFO PCB Animated Demo</div>
+    </div>
   </section>
 
-  <section id="software">
-    <h2>Software Projects</h2>
-    <ul>
-      <li>AI-Powered Resume Scanner (Python, OpenAI API)</li>
-      <li>Full-stack Web App with Flask and React</li>
-    </ul>
+  <section id="contact">
+    <h2 style="text-align:center; color:#4da6ff;">Feel free to contact me!</h2>
+    <form action="https://formspree.io/f/xyzjjoyp" method="POST">
+      <div>
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div>
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="_replyto" placeholder="Your email address" required>
+      </div>
+      <div>
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Send me a message!" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
-  <footer>
-    <p>© 2025 Shane Britton</p>
-  </footer>
 </body>
 </html>
