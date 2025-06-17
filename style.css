@@ -161,13 +161,11 @@ label {
 /* === Slideshow === */
 .slideshow-container {
   position: relative;
-  width: 100%;
-  max-width: 400px;
+  max-width: 800px;
+  margin: auto;
   height: 355px;
   overflow: hidden;
-  margin: 0 auto;
 }
-
 
 .slides {
   display: none;
@@ -265,4 +263,3 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
-
