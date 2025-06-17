@@ -3,134 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Shane Britton Portfolio</title>
-  <style>
-    body {
-      background: #0d0f10;
-      color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <link rel="stylesheet" href="style.css" />
 
-    header {
-      text-align: center;
-      padding: 2rem 1rem 0.5rem;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 2rem;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 1rem;
-    }
-
-    figure {
-      margin: 0;
-    }
-
-    figcaption {
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-
-    .flex-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .flex-images figure img {
-      width: 100%;
-      max-width: 350px;
-      aspect-ratio: 1.2;
-      object-fit: cover;
-      display: block;
-    }
-
-    video {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 1rem auto;
-    }
-
-    .centered {
-      text-align: center;
-    }
-
-    .rotated-gif {
-      transform: rotate(90deg);
-      max-width: 300px;
-    }
-
-    .rotated-180 {
-      transform: rotate(180deg);
-      max-width: 350px;
-    }
-
-    form {
-      max-width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 1rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    button {
-      background-color: #4da6ff;
-      color: white;
-      border: none;
-      padding: 1rem;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    label {
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
 
@@ -148,32 +26,74 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m Shane Britton, a multidisciplinary engineer and programmer focused on software, hardware, robotics, and mechanical design.</p>
+    <p>I started my academic journey as a mathematics major as it's always been my best subject, but I wanted a more hands-on experience so I switched to mechanical engineering. During the end of my mechanical engineering journey, I took an electrical engineering robotics course and really liked the way coding made me think — it felt structured and logical like math. That experience made me want to gain a deeper understanding of computer science. I'm now pursuing a master's degree at the University of Pennsylvania in the computer science field where I can increase my coding skills. I have an interest in robotics, AI, full-stack developement, and and am focused on improving my skills now.</p>
   </section>
 
-  <section id="mechanical">
-    <h2>Mechanical Projects</h2>
-    <ul>
-      <li><strong>Cam-Follower Mechanism</strong><br>
-        Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.
-      </li>
-    </ul>
+ <section id="mechanical">
+  <h2>Mechanical Projects</h2>
 
-    <div class="flex-images">
-      <figure>
-        <img src="images/labeled_assembly.gif" alt="CAD Model">
-        <figcaption>CAD Model</figcaption>
-      </figure>
-      <figure>
-        <img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up">
-        <figcaption>Cam-Roller Close Up</figcaption>
-      </figure>
-      <figure>
-        <img src="images/cam_machine.gif" alt="Full Assembly Test">
-        <figcaption>Full Assembly Test</figcaption>
-      </figure>
+  <!-- Cam-Follower -->
+  <h3>Cam-Follower Mechanism</h3>
+  <p>
+    Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.
+  </p>
+  <div class="flex-images">
+    <figure>
+      <img src="images/labeled_assembly.gif" alt="CAD Model">
+      <figcaption>CAD Model</figcaption>
+    </figure>
+    <figure>
+      <img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up">
+      <figcaption>Cam-Roller Close Up</figcaption>
+    </figure>
+    <figure>
+      <img src="images/cam_machine.gif" alt="Full Assembly Test">
+      <figcaption>Full Assembly Test</figcaption>
+    </figure>
+  </div>
+
+  <!-- Space Capsule -->
+  <h3>Space Capsule Project</h3>
+  <p>
+    Designed and tested a heat shield system for a conceptual space capsule. The work involved dynamic simulations, custom fixture design, CNC fabrication, and physical testing using routers and nylon support structures.
+  </p>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
+
+    <!-- Space Capsule Slideshow -->
+    <div class="slideshow-container" style="max-width: 400px;">
+      <div class="slides fade capsule"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
+      <div class="slides fade capsule"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
+      <div class="slides fade capsule"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
+      <div class="slides fade capsule"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
+      <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
+        <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
+        <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
+        <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
+      </div>
     </div>
-  </section>
+
+    <!-- Test Fixture Slideshow -->
+    <div class="slideshow-container" style="max-width: 400px;">
+      <div class="slides fade test"><div class="slide-wrapper"><img src="images/jig.jpg" alt="Jig"></div></div>
+      <div class="slides fade test"><div class="slide-wrapper"><img src="images/nylon_design.png" alt="Nylon Design"></div></div>
+      <div class="slides fade test"><div class="slide-wrapper"><img src="images/router.png" alt="Router"></div></div>
+      <div class="slides fade test"><div class="slide-wrapper"><img src="images/test_results.png" alt="Test Results"></div></div>
+      <div class="slides fade test"><div class="slide-wrapper"><img src="images/test_setup.jpg" alt="Test Setup"></div></div>
+      <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
+        <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
+        <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
+        <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
+        <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
+      </div>
+    </div>
+  </div>
+</section>
 
   <section id="robotics">
     <h2>Robotics Projects</h2>
@@ -211,9 +131,11 @@
       </figure>
     </div>
 
-    <div class="centered" style="margin-top: 2rem;">
-      <img src="images/ufo_pcb_demo.gif" alt="UFO PCB Demo" class="rotated-gif">
-      <div>UFO PCB Animated Demo</div>
+    <div class="demo-container">
+      <figure class="ufo-demo-figure">
+        <img src="images/ufo_pcb_demo.gif" alt="UFO PCB Demo">
+        <figcaption>UFO PCB Animated Demo</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -235,6 +157,50 @@
       <button type="submit">Send</button>
     </form>
   </section>
+
+  <script>
+  const slideData = {
+    capsule: { index: 1, slides: [], dots: [] },
+    test: { index: 1, slides: [], dots: [] }
+  };
+
+  function initSlides(group, slideClass, dotClass) {
+    slideData[group].slides = document.getElementsByClassName(slideClass);
+    slideData[group].dots = document.getElementsByClassName(dotClass);
+    showSlides(1, group);
+  }
+
+  function plusSlides(n, group) {
+    showSlides(slideData[group].index += n, group);
+  }
+
+  function currentSlide(n, group) {
+    showSlides(slideData[group].index = n, group);
+  }
+
+  function showSlides(n, group) {
+    let i;
+    const data = slideData[group];
+    const { slides, dots } = data;
+
+    if (n > slides.length) data.index = 1;
+    if (n < 1) data.index = slides.length;
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[data.index - 1].style.display = "block";
+    if (dots[data.index - 1]) dots[data.index - 1].className += " active";
+  }
+
+  window.onload = () => {
+    initSlides("capsule", "slides capsule", "dot capsule-dot");
+    initSlides("test", "slides test", "dot test-dot");
+  };
+  </script>
 
 </body>
 </html>

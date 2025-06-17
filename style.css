@@ -1,30 +1,249 @@
+/* === General Page Styling === */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #0d0f10;
+  color: #f2f2f2;
 }
+
 header {
   background: #111;
   color: #fff;
-  padding: 1rem;
+  padding: 2rem 1rem 0.5rem;
   text-align: center;
 }
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
 nav a {
-  margin: 0 1rem;
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
+
 section {
   padding: 2rem;
   max-width: 800px;
   margin: auto;
 }
+
 h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
   border-bottom: 2px solid #444;
   padding-bottom: 0.5rem;
 }
+
+/* === Typography & Lists === */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* === Figures and Captions === */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.2rem;
+  line-height: 1.2;
+  font-size: 1rem;
+  color: #f2f2f2;
+}
+
+/* === Flex Images === */
+.flex-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.flex-images figure img {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Video === */
+video {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* === Forms === */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #4da6ff;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* === Rotations and Demos === */
+.rotated-180 {
+  transform: rotate(180deg);
+  max-width: 350px;
+}
+
+.rotated-gif {
+  transform: rotate(90deg);
+  max-width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demo-container {
+  margin-top: 0;
+  text-align: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ufo-demo-figure img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0;
+  transform: rotate(90deg);
+  object-fit: cover;
+}
+
+/* === Slideshow === */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  height: 355px;
+  overflow: hidden;
+}
+
+.slides {
+  display: none;
+}
+
+.slide-wrapper {
+  width: 400px;
+  height: 355px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #0d0f10;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 400px;
+  height: 355px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === Slideshow Controls === */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* === Slideshow Dots === */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4da6ff;
+}
+
+/* === Fade Animation === */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4 }
+  to { opacity: 1 }
+}
+
+/* === Footer === */
 footer {
   background: #111;
   color: #fff;
@@ -34,3 +253,14 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+#about p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
