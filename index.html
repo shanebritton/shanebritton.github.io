@@ -41,45 +41,50 @@
 
     <h3>Space Capsule Project</h3>
     <p>Designed and tested a heat shield system for a conceptual space capsule. The work involved dynamic simulations, custom fixture design, CNC fabrication, and physical testing using routers and nylon support structures.</p>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
-      <div class="slideshow-container" style="max-width: 400px;">
-        <div class="slides capsule" style="display:block"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
-        <div class="slides capsule" style="display:none"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
-        <div class="slides capsule" style="display:none"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
-        <div class="slides capsule" style="display:none"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
-        <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
-        <div style="text-align:center">
-          <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
-          <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
-          <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
-          <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-top: 1rem;">
+      <div style="width: 400px; display: flex; flex-direction: column; align-items: center;">
+        <div class="slideshow-container" style="width: 100%;">
+          <div class="slides capsule" style="display:block"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
+          <div class="slides capsule" style="display:none"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
+          <div class="slides capsule" style="display:none"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
+          <div class="slides capsule" style="display:none"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
+          <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
+          <div style="text-align:center">
+            <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
+            <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
+            <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
+            <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
+          </div>
         </div>
+        <figcaption style="margin-top: 0.5rem;">Labeled Capsule and Dynamics</figcaption>
       </div>
 
-      <div class="slideshow-container" style="max-width: 400px;">
-        <div class="slides test" style="display:block"><img src="images/water_jet.gif" alt="Jig"></div>
-        <div class="slides test" style="display:none"><img src="images/router.png" alt="Router"></div>
-        <div class="slides test" style="display:block"><img src="images/jig.jpg" alt="Jig"></div>
-        <div class="slides test" style="display:none"><img src="images/nylon_design.png" alt="Nylon Design"></div>
-        <div class="slides test" style="display:none"><img src="images/test_setup.jpg" alt="Test Setup"></div>
-        <div class="slides test" style="display:none"><img src="images/test_results.png" alt="Test Results"></div>
-        <div class="slides test" style="display:none"><img src="images/female_block.jpg" alt="Test Results"></div>
-        <div class="slides test" style="display:none"><img src="images/full_assembly.png" alt="Test Results"></div>
-
-        <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
-        <div style="text-align:center">
-          <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(6, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(7, 'test')"></span>
-          <span class="dot test-dot" onclick="currentSlide(8, 'test')"></span>
-
+      <div style="width: 400px; display: flex; flex-direction: column; align-items: center;">
+        <div class="slideshow-container" style="width: 100%;">
+          <div class="slides test" style="display:block"><img src="images/water_jet.gif" alt="Jig"></div>
+          <div class="slides test" style="display:none"><img src="images/router.png" alt="Router"></div>
+          <div class="slides test" style="display:none"><img src="images/jig.jpg" alt="Jig"></div>
+          <div class="slides test" style="display:none"><img src="images/nylon_design.png" alt="Nylon Design"></div>
+          <div class="slides test" style="display:none"><img src="images/test_setup.jpg" alt="Test Setup"></div>
+          <div class="slides test" style="display:none"><img src="images/test_results.png" alt="Test Results"></div>
+          <div class="slides test" style="display:none"><img src="images/female_block.jpg" alt="Test Results"></div>
+          <div class="slides test" style="display:none"><img src="images/full_assembly.png" alt="Test Results"></div>
+          <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
+          <div style="text-align:center">
+            <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(6, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(7, 'test')"></span>
+            <span class="dot test-dot" onclick="currentSlide(8, 'test')"></span>
+          </div>
         </div>
+        <figcaption style="margin-top: 0.5rem;">Manufacturing and Testing</figcaption>
       </div>
     </div>
   </section>
