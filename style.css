@@ -263,3 +263,8 @@ p {
   text-align: justify;
   text-justify: inter-word;
 }
+
+li p {
+  text-align: justify;
+  text-justify: inter-word;
+}
