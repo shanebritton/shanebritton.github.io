@@ -28,72 +28,143 @@
     <p>I started my academic journey as a mathematics major as it's always been my best subject, but I wanted a more hands-on experience so I switched to mechanical engineering. During the end of my mechanical engineering journey, I took an electrical engineering robotics course and really liked the way coding made me think — it felt structured and logical like math. That experience made me want to gain a deeper understanding of computer science. I'm now pursuing a master's degree at the University of Pennsylvania in the computer science field where I can increase my coding skills. I have an interest in robotics, AI, full-stack development, and am focused on improving my skills now.</p>
   </section>
 
-  <section id="mechanical">
-    <h2>Mechanical Projects</h2>
+<section id="mechanical">
+  <h2>Mechanical Projects</h2>
 
-    <h3>Cam-Follower Mechanism</h3>
-    <p>Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.</p>
-    <div class="flex-images">
-      <figure><img src="images/labeled_assembly.gif" alt="CAD Model"><figcaption>CAD Model</figcaption></figure>
-      <figure><img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up"><figcaption>Cam-Roller Close Up</figcaption></figure>
-      <figure><img src="images/cam_machine.gif" alt="Full Assembly Test"><figcaption>Full Assembly Test</figcaption></figure>
+  <h3>Cam-Follower Mechanism</h3>
+  <p>
+    Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.
+  </p>
+  <div class="flex-images">
+    <figure><img src="images/labeled_assembly.gif" alt="CAD Model"><figcaption>CAD Model</figcaption></figure>
+    <figure><img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up"><figcaption>Cam-Roller Close Up</figcaption></figure>
+    <figure><img src="images/cam_machine.gif" alt="Full Assembly Test"><figcaption>Full Assembly Test</figcaption></figure><bk></bk>
+  </div>
+
+  <h3></bk></bk>Space Capsule Project</h3>
+  <p>
+    The following slides showcase the capsule assembly and manufacturing process, including CAD structure, simulations, and some of the fabrication process.
+  </p>
+
+  <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem; align-items: flex-start;">
+    
+    <!-- Left: Capsule slideshow with description -->
+    <div style="flex: 1; min-width: 400px; max-width: 500px;">
+      <div class="slideshow-container" style="width: 100%;">
+        <div class="slides capsule" style="display:block"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
+        <div class="slides capsule" style="display:none"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
+        <div class="slides capsule" style="display:none"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
+        <div class="slides capsule" style="display:none"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
+        <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
+        <div style="text-align:center">
+          <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
+          <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
+          <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
+          <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
+        </div>
+      </div>
+      <figcaption style="margin-top: 0.5rem;">Labeled Capsule and Dynamics</figcaption>
+      <div style="text-align: left; font-size: 0.9rem; margin-top: 0.5rem;">
+        <p>
+          This image shows the labeled capsule frame used in the motion simulator project. The structure includes four 
+          <strong>5052 aluminum bulkhead rings</strong>, connected by <strong>6061 aluminum stringers</strong> for structural support. 
+          The outer rings are joined using <strong>custom Nylon 12 brackets</strong>, 3D printed in-house, while the inner connections 
+          are reinforced with <strong>CNC-routed sheet metal brackets</strong>. To allow transport via elevator, each ring was 
+          <strong>split in half</strong> and reassembled using <strong>6061 aluminum connection plates</strong>. Two 
+          <strong>female connectors</strong> are mounted on each side of the capsule, designed to receive a <strong>male axle</strong>, 
+          enabling <strong>one degree of freedom pitch rotation</strong>.
+        </p>
+        <p>
+          The next image shows a diagram of the system dynamics, including the <strong>center of gravity (COG)</strong>, 
+          <strong>center of rotation (COR)</strong>, and distributed weight loads. This helped define mechanical requirements and 
+          guided torque and bearing selection.
+        </p>
+        <p>
+          The following slides display SolidWorks simulations under both <strong>horizontal</strong> and <strong>vertical</strong> 
+          loading conditions. Both scenarios yielded a <strong>Factor of Safety (FoS) above 2</strong>, validating the structural design.
+        </p>
+      </div>
     </div>
 
-    <h3>Space Capsule Project</h3>
-    <p>Designed and tested a heat shield system for a conceptual space capsule. The work involved dynamic simulations, custom fixture design, CNC fabrication, and physical testing using routers and nylon support structures.</p>
-
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; margin-top: 1rem;">
-      <div style="width: 400px; display: flex; flex-direction: column; align-items: center;">
-        <div class="slideshow-container" style="width: 100%;">
-          <div class="slides capsule" style="display:block"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
-          <div class="slides capsule" style="display:none"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
-          <div class="slides capsule" style="display:none"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
-          <div class="slides capsule" style="display:none"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
-          <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
-          <div style="text-align:center">
-            <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
-            <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
-            <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
-            <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
-          </div>
-        </div>
-        <figcaption style="margin-top: 0.5rem;">Labeled Capsule and Dynamics</figcaption>
-      </div>
-
-      <div style="width: 400px; display: flex; flex-direction: column; align-items: center;">
-        <div class="slideshow-container" style="width: 100%;">
-          <div class="slides test" style="display:block"><img src="images/water_jet.gif" alt="Jig"></div>
-          <div class="slides test" style="display:none"><img src="images/router.png" alt="Router"></div>
-          <div class="slides test" style="display:none"><img src="images/jig.jpg" alt="Jig"></div>
-          <div class="slides test" style="display:none"><img src="images/nylon_design.png" alt="Nylon Design"></div>
-          <div class="slides test" style="display:none"><img src="images/test_setup.jpg" alt="Test Setup"></div>
-          <div class="slides test" style="display:none"><img src="images/test_results.png" alt="Test Results"></div>
-          <div class="slides test" style="display:none"><img src="images/female_block.jpg" alt="Test Results"></div>
-          <div class="slides test" style="display:none"><img src="images/full_assembly.png" alt="Test Results"></div>
-          <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
-          <div style="text-align:center">
-            <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(6, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(7, 'test')"></span>
-            <span class="dot test-dot" onclick="currentSlide(8, 'test')"></span>
-          </div>
-        </div>
-        <figcaption style="margin-top: 0.5rem;">Manufacturing and Testing</figcaption>
-      </div>
+<!-- Right: Testing slideshow with fixed description below -->
+<div style="flex: 1; min-width: 400px; max-width: 500px;">
+  <div class="slideshow-container" style="width: 100%;">
+    <div class="slides test" style="display:block">
+      <img src="images/water_jet.gif" alt="Water Jet">
     </div>
-  </section>
+    <div class="slides test" style="display:none">
+      <img src="images/router.png" alt="Router">
+    </div>
+    <div class="slides test" style="display:none">
+      <img src="images/jig.jpg" alt="Jig">
+    </div>
+    <div class="slides test" style="display:none">
+      <img src="images/nylon_design.png" alt="Nylon Bracket Design">
+    </div>
+    <div class="slides test" style="display:none">
+      <img src="images/test_setup.jpg" alt="Bending Test Setup">
+    </div>
+    <div class="slides test" style="display:none">
+      <img src="images/test_results.png" alt="Bending Test Results">
+    </div>
+    <div class="slides test" style="display:none">
+      <img src="images/female_block.jpg" alt="Female Connector Block">
+    </div>
+    <div class="slides test" style="display:none">
+      <img src="images/full_assembly.png" alt="Full Capsule Assembly">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
+    <div style="text-align:center">
+      <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(6, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(7, 'test')"></span>
+      <span class="dot test-dot" onclick="currentSlide(8, 'test')"></span>
+    </div>
+  </div>
+
+  <figcaption style="margin-top: 0.5rem;">Manufacturing and Testing</figcaption>
+  <div style="text-align: left; font-size: 0.9rem; margin-top: 0.5rem;">
+    <p>
+      The first image shows the bulkhead rings being cut by our sponsor, <strong>Waste Gas Fabricating</strong>, using a water jet. All four rings were machined from aluminum plate.
+    </p>
+    <p>
+      The second image shows a <strong>CNC router</strong> cutting connection plates, which were also used to fabricate the sheet metal brackets that attach to the inner rings.
+    </p>
+    <p>
+      A <strong>custom jig</strong> was developed to keep the rings concentric and evenly spaced during assembly, which was critical to maintain dimensional accuracy.
+    </p>
+    <p>
+      The next image shows the <strong>custom Nylon 12 bracket</strong> I designed in SolidWorks, which connects the outer stringers to the bulkhead frame.
+    </p>
+    <p>
+      A <strong>bending test</strong> was performed on the 3D printed brackets to determine their maximum load before fracture.
+    </p>
+    <p>
+      The test data was captured and plotted as a <strong>force vs. displacement curve</strong> to quantify structural performance.
+    </p>
+    <p>
+      The <strong>female connector block</strong>, shown next, was milled using a CNC machine to accept the rotating axle interface.
+    </p>
+    <p>
+      The final image shows the <strong>fully assembled capsule</strong>. A future team will design and build the cradle system to support the capsule for pitch testing.
+    </p>
+  </div>
+</div>
+</section>
+
 
   <section id="robotics">
     <h2>Robotics Projects</h2>
     <ul>
-      <li><strong>MiniPupper ROS2 Line Following Robot</strong><br>
-        Built an autonomous quadruped using ROS 2 and Python. Integrated PID control for real-time line tracking and used a custom ROS service to trigger dance routines. Solved multicast blocking with a Husarnet VPN tunnel for direct DDS node communication.
+      <li><strong>Quadruped Line Following Robot Using ROS 2</strong><br><br>
+        Built an autonomous quadruped robot using ROS 2 and Python, powered by a Raspberry Pi camera. The robot followed a line and was programmed to stop at blue and green markers to perform short dance routines before continuing. It came to a full stop at the red marker at the end of the track. To enable peer-to-peer DDS communication despite network restrictions, I set up a Husarnet VPN. This project earned 2nd place in the MiniPupper Competition at the IEEE Region 1 and 2 Student Conference in 2025.
       </li>
     </ul>
     <div class="centered">
@@ -101,15 +172,15 @@
         <source src="images/minipupper_final.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <div>Minipupper tracking and dancing demo</div>
+      <div></div>
     </div>
   </section>
 
   <section id="hardware">
     <h2>Hardware Projects</h2>
     <ul>
-      <li><strong>UFO PCB Board</strong><br>
-        Designed a UFO-shaped custom PCB in KiCad, integrating 43 individually addressable NeoPixels. Hand-soldered SMD and through-hole components, achieving both aesthetic design and electrical integrity. Created dynamic lighting animations for demo.
+      <li><strong>UFO PCB Board</strong><br><br>
+        Designed a UFO-shaped custom PCB in KiCad with NeoPixels. I hand-soldered the through-hole components and used solder paste with a reflow oven for the surface-mount parts. The board was both functional and fun, with colorful lighting animations that brought the design to life during demos.
       </li>
     </ul>
     <div class="flex-images" style="margin-top:1rem;">
