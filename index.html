@@ -8,7 +8,6 @@
   <meta http-equiv="Expires" content="0" />
   <title>Shane Britton Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
 
@@ -26,74 +25,56 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I started my academic journey as a mathematics major as it's always been my best subject, but I wanted a more hands-on experience so I switched to mechanical engineering. During the end of my mechanical engineering journey, I took an electrical engineering robotics course and really liked the way coding made me think — it felt structured and logical like math. That experience made me want to gain a deeper understanding of computer science. I'm now pursuing a master's degree at the University of Pennsylvania in the computer science field where I can increase my coding skills. I have an interest in robotics, AI, full-stack developement, and and am focused on improving my skills now.</p>
+    <p>I started my academic journey as a mathematics major as it's always been my best subject, but I wanted a more hands-on experience so I switched to mechanical engineering. During the end of my mechanical engineering journey, I took an electrical engineering robotics course and really liked the way coding made me think — it felt structured and logical like math. That experience made me want to gain a deeper understanding of computer science. I'm now pursuing a master's degree at the University of Pennsylvania in the computer science field where I can increase my coding skills. I have an interest in robotics, AI, full-stack development, and am focused on improving my skills now.</p>
   </section>
 
- <section id="mechanical">
-  <h2>Mechanical Projects</h2>
+  <section id="mechanical">
+    <h2>Mechanical Projects</h2>
 
-  <!-- Cam-Follower -->
-  <h3>Cam-Follower Mechanism</h3>
-  <p>
-    Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.
-  </p>
-  <div class="flex-images">
-    <figure>
-      <img src="images/labeled_assembly.gif" alt="CAD Model">
-      <figcaption>CAD Model</figcaption>
-    </figure>
-    <figure>
-      <img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up">
-      <figcaption>Cam-Roller Close Up</figcaption>
-    </figure>
-    <figure>
-      <img src="images/cam_machine.gif" alt="Full Assembly Test">
-      <figcaption>Full Assembly Test</figcaption>
-    </figure>
-  </div>
-
-  <!-- Space Capsule -->
-  <h3>Space Capsule Project</h3>
-  <p>
-    Designed and tested a heat shield system for a conceptual space capsule. The work involved dynamic simulations, custom fixture design, CNC fabrication, and physical testing using routers and nylon support structures.
-  </p>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
-
-    <!-- Space Capsule Slideshow -->
-    <div class="slideshow-container" style="max-width: 400px;">
-      <div class="slides fade capsule"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
-      <div class="slides fade capsule"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
-      <div class="slides fade capsule"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
-      <div class="slides fade capsule"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
-      <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
-      <div style="text-align:center">
-        <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
-        <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
-        <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
-        <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
-      </div>
+    <h3>Cam-Follower Mechanism</h3>
+    <p>Designed a high-cycle cam-follower system using SolidWorks and MATLAB. Analyzed motion profiles with SVAJ plots and implemented a modified trapezoidal cam for smooth acceleration. CNC-milled the cam and verified 6 mm displacement over 1 million cycles.</p>
+    <div class="flex-images">
+      <figure><img src="images/labeled_assembly.gif" alt="CAD Model"><figcaption>CAD Model</figcaption></figure>
+      <figure><img src="images/cam_roller_closeup.gif" alt="Cam-Roller Close Up"><figcaption>Cam-Roller Close Up</figcaption></figure>
+      <figure><img src="images/cam_machine.gif" alt="Full Assembly Test"><figcaption>Full Assembly Test</figcaption></figure>
     </div>
 
-    <!-- Test Fixture Slideshow -->
-    <div class="slideshow-container" style="max-width: 400px;">
-      <div class="slides fade test"><div class="slide-wrapper"><img src="images/jig.jpg" alt="Jig"></div></div>
-      <div class="slides fade test"><div class="slide-wrapper"><img src="images/nylon_design.png" alt="Nylon Design"></div></div>
-      <div class="slides fade test"><div class="slide-wrapper"><img src="images/router.png" alt="Router"></div></div>
-      <div class="slides fade test"><div class="slide-wrapper"><img src="images/test_results.png" alt="Test Results"></div></div>
-      <div class="slides fade test"><div class="slide-wrapper"><img src="images/test_setup.jpg" alt="Test Setup"></div></div>
-      <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
-      <div style="text-align:center">
-        <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
-        <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
-        <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
-        <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
-        <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
+    <h3>Space Capsule Project</h3>
+    <p>Designed and tested a heat shield system for a conceptual space capsule. The work involved dynamic simulations, custom fixture design, CNC fabrication, and physical testing using routers and nylon support structures.</p>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
+      <div class="slideshow-container" style="max-width: 400px;">
+        <div class="slides capsule"><img src="images/labeled_capsule.png" alt="Labeled Capsule"></div>
+        <div class="slides capsule"><img src="images/horiz_dynamics.png" alt="Horizontal Dynamics"></div>
+        <div class="slides capsule"><img src="images/horiz_sim.png" alt="Horizontal Simulation"></div>
+        <div class="slides capsule"><img src="images/vert_sim.png" alt="Vertical Simulation"></div>
+        <a class="prev" onclick="plusSlides(-1, 'capsule')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'capsule')">&#10095;</a>
+        <div style="text-align:center">
+          <span class="dot capsule-dot" onclick="currentSlide(1, 'capsule')"></span>
+          <span class="dot capsule-dot" onclick="currentSlide(2, 'capsule')"></span>
+          <span class="dot capsule-dot" onclick="currentSlide(3, 'capsule')"></span>
+          <span class="dot capsule-dot" onclick="currentSlide(4, 'capsule')"></span>
+        </div>
+      </div>
+
+      <div class="slideshow-container" style="max-width: 400px;">
+        <div class="slides test"><img src="images/jig.jpg" alt="Jig"></div>
+        <div class="slides test"><img src="images/nylon_design.png" alt="Nylon Design"></div>
+        <div class="slides test"><img src="images/router.png" alt="Router"></div>
+        <div class="slides test"><img src="images/test_results.png" alt="Test Results"></div>
+        <div class="slides test"><img src="images/test_setup.jpg" alt="Test Setup"></div>
+        <a class="prev" onclick="plusSlides(-1, 'test')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'test')">&#10095;</a>
+        <div style="text-align:center">
+          <span class="dot test-dot" onclick="currentSlide(1, 'test')"></span>
+          <span class="dot test-dot" onclick="currentSlide(2, 'test')"></span>
+          <span class="dot test-dot" onclick="currentSlide(3, 'test')"></span>
+          <span class="dot test-dot" onclick="currentSlide(4, 'test')"></span>
+          <span class="dot test-dot" onclick="currentSlide(5, 'test')"></span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="robotics">
     <h2>Robotics Projects</h2>
@@ -102,7 +83,6 @@
         Built an autonomous quadruped using ROS 2 and Python. Integrated PID control for real-time line tracking and used a custom ROS service to trigger dance routines. Solved multicast blocking with a Husarnet VPN tunnel for direct DDS node communication.
       </li>
     </ul>
-
     <div class="centered">
       <video controls>
         <source src="images/minipupper_final.mp4" type="video/mp4">
@@ -119,18 +99,10 @@
         Designed a UFO-shaped custom PCB in KiCad, integrating 43 individually addressable NeoPixels. Hand-soldered SMD and through-hole components, achieving both aesthetic design and electrical integrity. Created dynamic lighting animations for demo.
       </li>
     </ul>
-
     <div class="flex-images" style="margin-top:1rem;">
-      <figure>
-        <img src="images/ufo_pcb_front.jpeg" alt="UFO PCB Front" class="rotated-180">
-        <figcaption>UFO PCB Front</figcaption>
-      </figure>
-      <figure>
-        <img src="images/ufo_pcb_back.jpeg" alt="UFO PCB Back" class="rotated-180">
-        <figcaption>UFO PCB Back</figcaption>
-      </figure>
+      <figure><img src="images/ufo_pcb_front.jpeg" alt="UFO PCB Front" class="rotated-180"><figcaption>UFO PCB Front</figcaption></figure>
+      <figure><img src="images/ufo_pcb_back.jpeg" alt="UFO PCB Back" class="rotated-180"><figcaption>UFO PCB Back</figcaption></figure>
     </div>
-
     <div class="demo-container">
       <figure class="ufo-demo-figure">
         <img src="images/ufo_pcb_demo.gif" alt="UFO PCB Demo">
@@ -159,47 +131,44 @@
   </section>
 
   <script>
-  const slideData = {
-    capsule: { index: 1, slides: [], dots: [] },
-    test: { index: 1, slides: [], dots: [] }
-  };
+    const slideData = {
+      capsule: { index: 1, slides: [], dots: [] },
+      test: { index: 1, slides: [], dots: [] }
+    };
 
-  function initSlides(group, slideClass, dotClass) {
-    slideData[group].slides = document.getElementsByClassName(slideClass);
-    slideData[group].dots = document.getElementsByClassName(dotClass);
-    showSlides(1, group);
-  }
-
-  function plusSlides(n, group) {
-    showSlides(slideData[group].index += n, group);
-  }
-
-  function currentSlide(n, group) {
-    showSlides(slideData[group].index = n, group);
-  }
-
-  function showSlides(n, group) {
-    let i;
-    const data = slideData[group];
-    const { slides, dots } = data;
-
-    if (n > slides.length) data.index = 1;
-    if (n < 1) data.index = slides.length;
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    function initSlides(group, slideClass, dotClass) {
+      slideData[group].slides = document.querySelectorAll(`.slides.${slideClass}`);
+      slideData[group].dots = document.querySelectorAll(`.dot.${dotClass}`);
+      showSlides(1, group);
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[data.index - 1].style.display = "block";
-    if (dots[data.index - 1]) dots[data.index - 1].className += " active";
-  }
 
-  window.onload = () => {
-    initSlides("capsule", "slides capsule", "dot capsule-dot");
-    initSlides("test", "slides test", "dot test-dot");
-  };
+    function plusSlides(n, group) {
+      showSlides(slideData[group].index += n, group);
+    }
+
+    function currentSlide(n, group) {
+      showSlides(slideData[group].index = n, group);
+    }
+
+    function showSlides(n, group) {
+      const data = slideData[group];
+      const { slides, dots } = data;
+
+      if (slides.length === 0) return;
+      if (n > slides.length) data.index = 1;
+      if (n < 1) data.index = slides.length;
+
+      slides.forEach(s => s.style.display = "none");
+      dots.forEach(d => d.className = d.className.replace(" active", ""));
+
+      slides[data.index - 1].style.display = "block";
+      if (dots[data.index - 1]) dots[data.index - 1].className += " active";
+    }
+
+    window.onload = () => {
+      initSlides("capsule", "capsule", "capsule-dot");
+      initSlides("test", "test", "test-dot");
+    };
   </script>
 
 </body>
